@@ -10,4 +10,9 @@ const div = document.createElement('div');
 
 for (let i = 0; i < elements.length; i++){
   let {tag, texto} = elements[i];
+  let createTag = document.createElement(tag);
+  createTag.innerHTML = texto;
+  div.appendChild(createTag);
 }
+
+container.appendChild(div);
